@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <button>버튼</button>
+        <label for="eventon">eventon</label>
+        <input type="checkbox" id="eventon">
+        <script>
+            const clickHandler = ()  =>{
+                alert('clicked');
+            };
+
+            const checkBox = document.querySelector('input');
+            const btn = document.querySelector('button');
+            checkBox.addEventListener('click', () =>{
+                if(checkBox.checked){
+                    btn.addEventListener('click', clickHandler);
+
+                }else{
+                    btn.addEventListener('click', clickHandler);
+                }
+            });
+        </script>
+    </body>
+</html>

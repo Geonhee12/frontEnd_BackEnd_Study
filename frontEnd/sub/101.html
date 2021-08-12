@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            div{
+                width: 100px;
+                height: 100px;
+                border: 1px solid #000;
+            }
+        </style>
+    </head>
+    <body>
+        <div>click me</div>
+        <button>click me</button>
+        <script>
+            const box = document.querySelector('div');
+            const btn = document.querySelector('button');
+
+            const clickHandler = function() {
+                alert('clicked');
+            }
+            box.onclick = clickHandler;
+            btn.onclick = clickHandler;
+
+            window.onresize = function() {
+                box.innerText = window.innerWidth + 'x' + window.innerHeight;
+            };
+        </script>
+    </body>
+</html>

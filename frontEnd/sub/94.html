@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .red{ color: #ff0000;}
+            .blue{color: #0000ff;}
+            .bold{ font-weight: bold;}
+        </style>
+    </head>
+    <body>
+        <div>
+            <h1>Cities</h1>
+            <ul>
+                <li id="one" class="red bold">seoul</li>
+                <li id="two" class="blue">london</li>
+                <li id="three" class="red">newyork</li>
+                <li id="four">tokyo</li>
+            </ul>
+        </div>
+        <script>
+            const el = document.querySelector('ul');
+            const cNodes = el.children;
+            for(let  i=0; i<cNodes.length; i++){
+                if(cNodes[i].classList.contains('blue')){
+                    cNodes[i].classList.replace('blue', 'red');
+                }
+                else if(cNodes[i].classList.contains('red')){
+                    cNodes[i].classList.replace('red', 'blue');
+                }
+            }
+         </script>
+    </body>
+</html>

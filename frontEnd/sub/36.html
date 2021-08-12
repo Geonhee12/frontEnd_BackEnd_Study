@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            fieldset{
+                width: 300px;
+            }
+            fieldset + fieldset{
+                margin-top: 30px;
+            }
+            .user-info p label{
+                display: inline-block;
+                width: 80px;
+            }
+            .room-select input:checked + label{
+                color: red;
+                font-weight: bold;
+            }
+            input:not([type=radio]) {
+                width: 200px;
+                height: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <fieldset class="user-info">
+            <legend>개인정보</legend>
+            <p>
+                <label for="name">이름</label>
+                <input type="text" id="name">
+            </p>
+            <p>
+                <label for="tel">연락처</label>
+                <input type="tel" id="tel">
+            </p>
+        </fieldset>
+        <fieldset class="room-select">
+            <legend>객실형태</legend>
+            <p>
+                <input type="radio" id="type1" name="room_type" value="1">
+                <label for="type1">기본형(최대 2인)</label>
+                
+            </p>
+            <p>
+                <input type="radio" id="type2" name="room_type" value="2">
+                <label for="type2">가족형(최대 8인)</label>
+                
+            </p>
+        </fieldset>
+    </body>
+</html>

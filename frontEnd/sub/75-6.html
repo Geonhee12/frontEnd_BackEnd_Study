@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+</head>
+
+<body>
+    <script>
+        const arr = [];
+        console.log(arr[0]);
+        arr[1] = 1;
+        arr[3] = 3;
+        console.log(arr);
+        console.log(arr[10000]);
+        console.log(arr.length);
+
+        arr[10000] = 10000;
+        console.log(arr[10000]);
+        console.log(arr);
+        console.log(arr.length);
+        /* 
+            pdf에 호이스팅이 없는 변수로 생성된다고 되어 있는데 
+            15번번줄 console.log를 보시면 호이스팅은 되지만 
+            19번째 줄 전까지액세스만 불가능한 것 아닌가요??*/
+
+        
+    </script>
+    
+</body>
+
+</html>

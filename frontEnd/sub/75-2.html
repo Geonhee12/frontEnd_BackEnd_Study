@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+</head>
+
+<body>
+    <script>
+        var person = new Object();
+        person.name = "Kim";
+        person.sayHello = function(){
+            console.log("hello, my name is "+ this.name);
+        };
+
+        console.log(typeof person);
+        console.log(person);
+
+        person.sayHello();
+    </script>
+    
+</body>
+
+</html>

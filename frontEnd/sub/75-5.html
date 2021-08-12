@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+</head>
+
+<body>
+    <script>
+        const str = 'hello';
+        console.log(str.charAt(0));
+        console.log(str.charAt(1));
+        console.log(str.charAt(2));
+        console.log(str.charAt(3));
+        console.log(str.charAt(4));
+        console.log(str.charAt(5));
+
+        for(let i=0; i<str.length; i++){
+            console.log(str.charAt(i));
+        }
+        for(let i=0; i<str.length; i++){
+
+
+
+            console.log(str[i]);
+        }
+
+        const str1 = 'Hello world';
+        console.log(str1.indexOf(' '));
+        console.log(str1.indexOf('e'));
+        document.write(str1);
+        if(str1.indexOf(' ') != -1){
+            console.log('공백은 입력할 수 없습니다.');
+        }
+        if(str1.includes(' ')){
+            console.log('공백은 입력할 수 없습니다.');
+        }
+
+        const str2='How are you doing?';
+        console.log(str2.replace(' ', '-'));
+        let strArr = str2.split(' ');
+        for(let  i=0; i<strArr.length; i++){
+            console.log(strArr[i]);
+        }
+
+    </script>
+    
+</body>
+
+</html>

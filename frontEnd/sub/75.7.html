@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+</head>
+
+<body>
+    <script>
+        const arr= [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        arr.name = 'number array';
+
+        for(const key in arr){
+            console.log(arr[key]);
+        }
+        for(let i=0; i<arr.length; i++){
+            console.log(arr[i]);
+        }
+        for(let el of arr){
+            console.log(el);
+        }
+
+        arr.forEach((el, idx) => {
+            console.log(idx, el, arr);
+        });
+
+        const arr1 = [1, 2, 3, 4];
+        let result = arr1.join();
+        console.log(result);
+
+        result = arr1.join('-');
+        console.log(result);
+
+        let arrResult = arr1.push(5, 6);
+        console.log(arrResult);
+        console.log(arr1);
+
+        const res1 = arr1.splice(1, 2);
+        console.log(res1);
+        console.log(arr1);
+
+        const res2 = arr1.splice(2, 0, 7, 8, 9);
+        console.log(res2);
+        console.log(arr1);
+    </script>
+    
+</body>
+
+</html>

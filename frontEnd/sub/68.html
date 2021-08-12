@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+
+    </head>
+    <body>
+        <label for="checkM">남</label>
+        <input id="checkM" type="checkbox" value="M">
+        <label for="checkF">여</label>
+        <input id="checkF" type="checkbox" value="F">
+        <button type="button" onclick="submit()">전송</button>
+        <script>
+            function submit() {
+                var checkM = document.getElementById('checkM');
+                var checkF = document.getElementById('checkF');
+
+                
+                if(!checkM)
+                {
+                
+                    alert('여자를 선택하셨습니다.');
+                }
+            }
+        </script>
+    </body>
+</html>

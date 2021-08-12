@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            div{
+                padding: 40px;
+                border:  1px solid #000;
+                float: left;
+                margin: 10px;
+                perspective: 100px;
+            }
+            #rotate3d_x:hover {transform:rotateX(-40deg);}
+            #rotate3d_y:hover {transform:rotateY(40deg);}
+            #rotate3d_z:hover {transform: rotateZ(40deg);}
+        </style>
+    </head>
+    <body>
+        <div>
+            <img src="./images/tree.jpg" id="rotate3d_x">
+        </div>
+        <div>
+            <img src="./images/tree.jpg" id="rotate3d_y">
+        </div>
+        <div>
+            <img src="./images/tree.jpg" id="rotate3d_z">
+        </div>
+    </body>
+</html>

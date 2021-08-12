@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+</head>
+
+<body>
+    <script>
+        var a= {
+            val : 10
+        };
+        var b = {
+            val : 10
+        };
+        console.log(a.val, b.val, a);
+        console.log(a===b);
+
+        var c= a;
+        c.val = 11;
+        console.log(a.val, c.val);
+        console.log(a === c);
+    </script>
+    
+</body>
+
+</html>

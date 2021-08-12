@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .red{ color: #ff0000;}
+            .blue{color: #0000ff;}
+        </style>
+    </head>
+    <body>
+        <div>
+            <h1>Cities</h1>
+            <ul>
+                <li id="one" class="red">seoul</li>
+                <li id="two" class="blue">london</li>
+                <li id="three" class="red">newyork</li>
+                <li id="four">tokyo</li>
+            </ul>
+        </div>
+        <script>
+            const els = document.querySelectorAll('li');
+            for(let i=0; i<els.length; i++){
+                els[i].className = 'blue';
+            }
+                    </script>
+    </body>
+</html>

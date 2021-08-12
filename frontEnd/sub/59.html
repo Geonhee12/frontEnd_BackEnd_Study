@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script type="text/javascript">
+            var count = 0;
+            function writeMessage(){
+                document.getElementById("message").innerText = (++count+"번 누르셨습니다.");
+            }
+        </script>
+    </head>
+    <body>
+        <p id="message"></p>
+        <input type="button" value="Click me" onclick="writeMessage();">
+    </body>
+</html>

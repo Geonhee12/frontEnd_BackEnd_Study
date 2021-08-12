@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            div{
+                border: 1px solid #000;
+                width: 500px;
+                height: 200px;
+                margin-left: 100px;
+            }
+        </style>
+    </head>
+    <body>
+        <div></div>
+        <script>
+            const box = document.querySelector('div');
+            const eventHandler = (evt) => {
+                box.innerText = '(' + evt.clientX + ',' + evt.clientY + ')';
+            };
+            box.addEventListener('mousemove' ,eventHandler);
+        </script>
+    </body>
+</html>

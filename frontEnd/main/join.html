@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href= "./css/style.css">
+    <title>HTML 기본 문서</title>
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <div id="logo">
+    
+                <a href="index.html">
+                    <h1>제주맥주</h1>
+                </a>
+            </div>
+            <div id="user">
+                <a href="./login.html">LOGIN</a>
+                <a href="./join_agree.html">JOIN</a>
+            </div>
+        </header>
+        <nav>
+            <ul class="clear">
+                <li><a href="index.html">EVENT</a></li>
+                <li><a href="shop.html">SHOP</a></li>
+                <li><a href="about_us.html">ABOUT US</a></li>
+                <li><a href="news.html">NEWS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+        <aside>
+            <div class="nav-btn">
+                <a href="#"><img src="./img/share.png" width="50"></a>
+            </div>
+            <div class="nav-gray-btn">
+                <a href="#"><img src="./img/up.png" width="50"></a>
+            </div>
+        </aside>
+        <main>
+            <div>
+                <h1>JOIN</h1>
+                <p>안녕하세요 제주맥주입니다.</p>
+            </div>
+            <div id="form-join">
+                <form action="#" method="POST" enctype="multipart/form-data">
+                    <div id="photo_div">
+                        <input type="file" id="photo" name="photo">
+                    </div>
+                    <div>
+                        <label for="email" class="dot">이메일 </label><br>
+                        <input type="email" id="email" name="email" placeholder="이메일">
+                    </div>
+                    <div>
+                        <label for="pass1" class="dot">비밀번호 </label><br>
+                        <input type="password" id="pass1" name="pass1" placeholder="비밀번호"><br>
+                        <input type="password" id="pass2" placeholder="비밀번호 확인">
+                    </div>
+                    <div>
+                        <label for="name" class="dot">이름 </label><br>
+                        <input type="text" id="name" name="name" placeholder="이름을(를) 입력하세요">
+                    </div>
+                    <div>
+                        <label class="dot">성별 </label><br>
+                        <input type="radio" id="man" name="gender" value="man">
+                        <label for="man">남자</label><br>
+                        <input type="radio" id="woman" name="gender" value="woman">
+                        <label for="woman">여자</label><br>
+                    </div>
+                    <div>
+                        <label for="tel" class="dot">연락처 </label><br>
+                        <input type="tel" id="tel" name="tel" placeholder="하이픈(-)없이 입력하세요">
+                    </div>
+                    <div>
+                        <label class="dot">주소 </label><br>
+                        <input type="text" id="address" name="address" placeholder="주소"><br>
+                        <input type="text" id="detail_address" name="detail_address" placeholder="상세 주소">
+                    </div>
+    
+                    <div>
+                        <label class="dot">생년월일 </label><br>
+                        <input type="date" id="date_of_birth" name="date_of_birth">
+                    </div>
+                    <div>
+                        <input type="hidden" id="agree_terms" name="agree_terms">
+                        <input type="hidden" id="person_information_agree" name="person_information_agree">
+                        <input type="hidden" id="marketing_sms_agree" name="marketing_sms_agree">
+                        <input type="hidden" id="marketing_email_agree" name="marketing_email_agree">
+                        <button type="submit">가입하기</button>
+                    </div>
+    
+                </form>
+            </div>
+        </main>
+        <footer>
+            <div>이용약관 | 개인정보관리방침 | 법적고지 | 이메일무단수집거부
+                주소 : ~~~
+                대표이사: ~~~ 개인정보관리책임자: ~~~
+                COPYRIGHT c ~~~~
+            </div>
+        </footer>
+    </div>
+  
+</body>
+
+</html>

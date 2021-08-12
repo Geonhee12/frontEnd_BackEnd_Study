@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+</head>
+
+<body>
+    <script>
+        const str1 = 'a123456b';
+        const str2 = 'ca123456bd';
+
+        const regExp1 = /a......b/;
+        const regExp2 = /a123456b/;
+        const regExp3 = /^a/;
+        const regExp4 = /b$/;
+
+        console.log(regExp1.exec(str1));
+        console.log(regExp1.exec(str2));
+        console.log(regExp2.exec(str1));
+        console.log(regExp2.exec(str2));
+        console.log(regExp3.exec(str1));
+        console.log(regExp3.exec(str2));
+        console.log(regExp4.exec(str1));
+        console.log(regExp4.exec(str2));
+    </script>
+</body>
+
+</html>

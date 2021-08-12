@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <div>
+            <label for="height">키(cm)</label>
+            <input type="text" id="height" maxlength="3">
+        </div>
+        <div>
+            <label for="weight">몸무게(kg)</label>
+            <input type="text" id="weight" maxlength="3">
+        
+        </div>
+        <button type="button" onclick="calcPhysicalLevel()">신체등급계산</button>
+        <div id="result"></div>
+        <script>
+            var height = document.getElementById('height');
+            var weight = document.getElementById('weight');
+            var message = document.getElementById('result');
+            var bmi = 0;
+            function calcPhysicalLevel(){
+                
+                var num1 = weight.value*10000;
+                var num2 = height.value*height.value;
+                bmi = num1/num2;
+                var level;
+                if(20<= bmi  && bmi <=24.9){
+                    if(height.value <= 140){
+                        level = "6급";
+                    }
+                    else if(140<height.value && height.value<146){
+                        level = "5급";
+                    }
+                    else if(146<= height.value && height.value<159){
+                        level = "4급";
+                    }
+                    else if(159<= height.value && height.value<161){
+                        level = "3급";
+                    }
+                    else if(161<= height.value && height.value<204){
+                        level = "1급";
+                    }
+                    else{
+                        level = "4급";
+                    }
+                }
+                else if(18.5<= bmi && bmi<= 19.9 || 25<=bmi && bmi<=29.9){
+                    if(height.value <= 140){
+                        level = "6급";
+                    }
+                    else if(140<height.value && height.value<146){
+                        level = "5급";
+                    }
+                    else if(146<= height.value && height.value<159){
+                        level = "4급";
+                    }
+                    else if(159<= height.value && height.value<161){
+                        level = "3급";
+                    }
+                    else if(161<= height.value && height.value<204){
+                        level = "2급";
+                    }
+                    else{
+                        level = "4급";
+                    }
+                }
+                else if(16<= bmi && bmi<= 18.4 || 30<=bmi && bmi<=34.9){
+                    if(height.value <= 140){
+                        level = "6급";
+                    }
+                    else if(140<height.value && height.value<146){
+                        level = "5급";
+                    }
+                    else if(146<= height.value && height.value<159){
+                        level = "4급";
+                    }
+                    else if(159<= height.value && height.value<161){
+                        level = "3급";
+                    }
+                    else if(161<= height.value && height.value<204){
+                        level = "3급";
+                    }
+                    else{
+                        level = "4급";
+                    }
+                }
+                else{
+                    if(height.value <= 140){
+                        level = "6급";
+                    }
+                    else if(140<height.value && height.value<146){
+                        level = "5급";
+                    }
+                    else if(146<= height.value && height.value<159){
+                        level = "4급";
+                    }
+                    else if(159<= height.value && height.value<161){
+                        level = "4급";
+                    }
+                    else if(161<= height.value && height.value<204){
+                        level = "4급";
+                    }
+                    else{
+                        level = "4급";
+                    }
+                }
+                message.innerText = level;
+            }
+        </script>
+    </body>
+</html>

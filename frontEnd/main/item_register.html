@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href= "./css/style.css">
+    <title>HTML 기본 문서</title>
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+
+            <a href="index.html">
+                <h1>제주맥주</h1>
+            </a>
+        </div>
+        <div id="user">
+            <a href="./login.html">LOGIN</a>
+            <a href="./join_agree.html">JOIN</a>
+        </div>
+    </header>
+    <nav>
+        <ul class="clear">
+            <li><a href="index.html">EVENT</a></li>
+            <li><a href="shop.html">SHOP</a></li>
+            <li><a href="about_us.html">ABOUT US</a></li>
+            <li><a href="news.html">NEWS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
+    <aside>
+        <div class="nav-btn">
+            <a href="#"><img src="./img/share.png" width="50"></a>
+        </div>
+        <div class="nav-gray-btn">
+            <a href="#"><img src="./img/up.png" width="50"></a>
+        </div>
+    </aside>
+    <main>
+        <form>
+            <fieldset>
+                <div>
+                    <label for="photo_item">상품 사진 &centerdot;</label>
+                    <input type="file" id="photo_item" name="photo_item">
+                </div>
+                <div>
+                    <label>상품명 &centerdot;</label>
+                    <input type="text" id="title_eng" name="title_eng" placeholder="영어로 입력하세요">
+                    <input type="text" id="title_kor" name="title_kor" placeholder="한국어로 입력하세요">
+                </div>
+                <div>
+                    <label for="price">상품가격 &centerdot;</label>
+                    <input type="text" id="price" name="price" placeholder="가격을 입력하세요">
+                </div>
+                
+                <div>
+                    <label for="shipmentfee">배송비 &centerdot;</label>
+                    <input type="text" id="shipmentfee" name="shipmentfee" placeholder="배송비를 입력하세요">
+                </div>
+                <div>
+                    <label for="detailed_info">상품 상세설명</label>
+                    <textarea name="detailed_info" id="detailed_info" cols="50" rows="20">상품에 대한 상세한 사진, 설명, 영양정보에 대해 작성 바랍니다.
+    
+                    </textarea>
+                </div>
+                <div>
+                    <label>배송 안내</label>
+                    <textarea name="shipment_guide" id="shipment_guide" cols="50" rows="20">배송비:~~
+배송안내: ~~~
+                    </textarea>
+                </div>
+                <div>
+                    <label>교환 및 환불 안내</label>
+                    <textarea name="exchange_refund" id="exchange_refund" cols="30" rows="10">제주맥주에서 구매하신 제품은 받으셨을 때와 동일한 상태로, 구매 후 7일 이내 교환/환불이 가능합니다.
+단순 변심으로 인한 교환 시 왕복 배송비 6천원, 환불 시 3천원을 청구합니다.
+오배송, 불량으로 인한 교환/환불 시 배송비 무료입니다. 
+제품 배송 이후 환불 요청 시에는 제품 회수 후에 환불이 완료됩니다.
+자세한 사항은 고객센터 혹은 문의 게시판에 문의해주세요.
+
+                    </textarea>
+                </div>
+
+                <div>
+                    <button type="reset">취소</button>
+                    <button type="submit">등록하기</button>
+                </div>
+            </fieldset>
+            
+        </form>
+    </main>
+    <footer>
+        <div>이용약관 | 개인정보관리방침 | 법적고지 | 이메일무단수집거부
+            주소 : ~~~
+            대표이사: ~~~ 개인정보관리책임자: ~~~
+            COPYRIGHT c ~~~~
+        </div>
+    </footer>
+</body>
+
+</html>

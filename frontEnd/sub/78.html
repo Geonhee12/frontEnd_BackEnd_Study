@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+</head>
+
+<body>
+    <button onclick="openWindow1()">창열기1</button>
+    <button onclick="openWindow2()">창열기2</button>
+    <button onclick="openWindow3()">창열기3</button>
+    <script>
+        let openWindow1 = function() {
+            let childWindow = window.open('http://www.naver.com', '', '');
+        }
+        let openWindow2 = function() {
+            let childWindow = window.open('http://www.naver.com', '', 'width=200, height=200');
+        }
+        let openWindow3 = function() {
+            let childWindow = window.open('http://www.naver.com', '', 'width=200, height=200, menubar=no, toolbar=no, status=no, location');
+        }
+
+    </script>
+</body>
+
+</html>

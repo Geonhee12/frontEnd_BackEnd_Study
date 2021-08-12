@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <script>
+            const contextMenuHandler = (evt) => {
+                alert('우클릭 금지!!');
+                evt.preventDefault();
+            }
+
+            document.addEventListener('contextmenu', contextMenuHandler);
+        </script>
+    </body>
+</html>

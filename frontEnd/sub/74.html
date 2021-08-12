@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+</head>
+
+<body>
+    <button onclick="counter()">click me</button>
+    <div id="box"></div>
+    <script>
+        var cnt = 0;
+        var el = document.getElementById('id');
+        function counter(){
+            el.innerText = ++cnt;
+        }
+    </script>
+</body>
+
+</html>
