@@ -4,7 +4,7 @@ import fetch from 'node-fetch'
 fetch('http://localhost:8090/echo?title=hello&msg=nodejs')
 .then((res)=> {
     // console.log(res.json())
-    return res.json()
+    return res.json();
 })
 .then((jsonObj)=> {
     console.log(jsonObj);

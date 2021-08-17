@@ -1,14 +1,9 @@
 {
-  "name": "exam04_fetch",
+  "name": "exam01_post",
   "version": "1.0.0",
-  "description": "",
   "type": "module",
+  "description": "",
   "main": "index.js",
-  "dependencies": {
-    "node": "^16.6.1",
-    "node-fetch": "^2.6.1"
-  },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

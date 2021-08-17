@@ -1,17 +1,17 @@
 {
-  "name": "exam04_fetch",
+  "name": "exam04_lodash",
   "version": "1.0.0",
   "description": "",
   "type": "module",
   "main": "index.js",
-  "dependencies": {
-    "node": "^16.6.1",
-    "node-fetch": "^2.6.1"
-  },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "lodash": "^4.17.21",
+    "lodash-es": "^4.17.21"
+  }
 }

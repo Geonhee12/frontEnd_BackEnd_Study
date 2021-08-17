@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div>
+        <form method="POST" action="/api/v1/addUser">
+            <!-- Content-Type: applications/x-www-form-urlencoded-->
+    
+            <h3>전통방식의 폼</h3>
+            <div>
+                <label for="name">name : </label>
+                <input name="name" id="name">
+            </div>
+            <div>
+                <label for="age">age : </label>
+                <input name="age" id="age">
+            </div>
+            <button>제출하기</button>
+        </form> 
+    </div>
+
+    
+    
+    <div>
+        <form method="POST" action="/api/v1/hello">
+            <!-- Content-Type: applications/x-www-form-urlencoded-->
+    
+            <h3>전통방식의 폼(파싱안함)</h3>
+            <div>
+                <label for="name">name : </label>
+                <input name="name" id="name">
+                <label for="age">age : </label>
+                <input name="age" id="age">
+            </div>
+            <button>제출하기</button>
+        </form> 
+    </div>
+    <hr>
+    <div>
+        <form id="ajax-form">
+            <!-- Content-Type: applications/x-www-form-urlencoded-->
+    
+            <h3>ajax 방식</h3>
+            <div>
+                <label for="name">name : </label>
+                <input name="name" id="name">
+                <label for="age">age : </label>
+                <input name="age" id="age">
+            </div>
+            <button>제출하기</button>
+            <div id="result"></div>
+        </form> 
+    </div>
+    
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script>
+        document.querySelector('#ajax-form button').addEventListener('click', async (evt) =>{
+            console.log(evt);
+            evt.preventDefault() // 리다이랙트 금지
+            let _form = document.querySelector('#ajax-form')
+            console.log(_form.age.value, _form.name.value);
+
+            let {status,data} = await axios.post('http://localhost:8080/api/v2/addUser',
+            {
+                name : _form.name.value,
+                age : parseInt(_form.age.value)
+            });
+            if(status == 200) {
+                console.log(data)
+                let result_item = document.createElement('h5')
+                result_item.innerText = `name:${data.name} , age :${data.age}`
+                document.querySelector('#result').appendChild(result_item)
+            }
+        })
+    </script>
+</body>
+</html>
