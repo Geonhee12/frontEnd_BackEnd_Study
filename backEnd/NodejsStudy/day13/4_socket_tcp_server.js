@@ -25,4 +25,4 @@ const tcp_server = net.createServer((_client) => {
 
 console.log(`server listen ${port}`);
 
-// 결국 tcp서버만으로 http 서버로 만들 수 있다. 
+// 결국 tcp서버만으로 http 서버로 만들 수 있다.
