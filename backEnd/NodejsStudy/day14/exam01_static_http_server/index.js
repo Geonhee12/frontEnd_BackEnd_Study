@@ -19,7 +19,7 @@ http.createServer((req, res) =>{
     console.log(urlObj.pathname);
     let header = {
         'Content-Type' : 'text/html'
-    }
+    } 
     let _path = './www' + urlObj.pathname;
     console.log(_path);
 
