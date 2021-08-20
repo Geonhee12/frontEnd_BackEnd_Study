@@ -17,7 +17,7 @@ export default createStore({
       context.state.bNowWriting =true;
       let {status, data} = await axios({
         method: 'POST',
-        url:'http://localhost:8000/api/v1/memo/insert',
+        url:'http://localhost:8080/api/v1/memo/insert',
         data: JSON.stringify(playload),
         headers: {
           'Content-Type' : 'application/json'
@@ -30,7 +30,7 @@ export default createStore({
     },
     async updateMemoList(context){ // 함수 자체를 비동기함수로 선언한 것
       try{
-        let {status, data} = await axios.get('http://localhost:8000/api/v1/memo/find/skip/0/limit/100')
+        let {status, data} = await axios.get('http://localhost:8080/api/v1/memo/find/skip/0/limit/100')
         console.log(status);
         console.log(data);
         context.commit('updateMemoList', data.d);
@@ -41,7 +41,7 @@ export default createStore({
     },
     async deleteMemo(context,playload) {
       try {
-        let { status, data } = await axios.get(`http://localhost:8000/api/v1/memo/delete/id/${playload}`)
+        let { status, data } = await axios.get(`http://localhost:8080/api/v1/memo/delete/id/${playload}`)
         console.log(status);
         console.log(data);
         context.dispatch('updateMemoList');
