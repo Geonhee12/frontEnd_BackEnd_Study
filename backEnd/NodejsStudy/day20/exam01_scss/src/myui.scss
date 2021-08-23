@@ -1,0 +1,45 @@
+.myui{
+    // .myui.btn
+    &.btn{
+        background-color: #4caf50;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+    }
+    &.nav{
+        margin: 0px;
+        ul{
+            margin: 0px;
+            list-style-type: none;
+            overflow: hidden; 
+            /* 이거 적용했는데 왜 나오지 안적용하면 안나오고,,*/
+            background-color: purple;
+
+            li{
+                float: left;
+                a{
+                    display: block;
+                    text-align: center;
+                    color: white;
+                    padding: 14px 16px;
+                    text-decoration: none;
+                }
+            }
+        }
+        .activate{
+            background-color: gray;
+        }
+
+    }
+    &.modal{
+        padding: 32px 16px;
+        background-color: gainsboro;
+
+    }
+}
